@@ -1,0 +1,29 @@
+body {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    margin: 20px 0;
+}
+
+.site {
+    background-color: black;
+    border: 1px solid grey;
+    color: brown;
+}
+
+.open-site {
+    background-color: white;
+}
+
+.blocked-site {
+    background-color: black;
+}
+
+.full-open-site {
+    background-color: aqua;
+}
