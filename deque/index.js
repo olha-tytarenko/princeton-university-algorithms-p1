@@ -4,7 +4,7 @@ const removeFisrtButton = document.getElementById('removeFirst');
 const removeLastButton = document.getElementById('removeLast');
 
 const dequeContainerElement = document.getElementById('dequeVisualisation');
-const deque = new ArrayDeque();
+const deque = new LinkedListDeque();
 
 insertFisrtButton.addEventListener('click', addItem('addFirst'));
 insertLastButton.addEventListener('click', addItem('addLast'));

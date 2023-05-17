@@ -1,4 +1,4 @@
-class PointerDeque {
+class LinkedListDeque {
     constructor() {
         this.start = null;
         this.end = null;
@@ -64,6 +64,10 @@ class PointerDeque {
 
         this.start = this.start.next;
         this.size--;
+
+        if (this.size === 0) {
+            this.end = null;
+        }
     }
 
     removeLast() {
@@ -76,6 +80,9 @@ class PointerDeque {
         if (this.size === 1) {
             this.start = null;
             this.end = null;
+            this.size--;
+
+            return;
         }
 
         while (current.next.next) {
