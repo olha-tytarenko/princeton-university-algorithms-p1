@@ -201,7 +201,7 @@ class PercolationStats {
 }
 
 window.onload = () => {
-    const test = new PercolationStats(100, 5);
+    const test = new PercolationStats(30, 5);
     test.calculate();
     console.log(test.mean());
     console.log(test.stddev());
