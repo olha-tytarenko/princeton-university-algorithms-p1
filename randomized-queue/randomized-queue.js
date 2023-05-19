@@ -5,11 +5,11 @@ class RandomizedQueue {
     }
 
     isEmpty() {
-        return this.queue === 0;
+        return this.queueLength === 0;
     }
 
     size() {
-        return this.queue.length;
+        return this.queueLength;
     }
 
     enqueue(item) {
@@ -22,7 +22,7 @@ class RandomizedQueue {
     }
 
     dequeue() {
-        if (this.queue.length === 0) {
+        if (this.queueLength === 0) {
             throw 'No Such Element Exception';
         }
 
@@ -36,7 +36,7 @@ class RandomizedQueue {
     }
 
     sample() {
-        if (this.queue.length === 0) {
+        if (this.queueLength === 0) {
             throw 'No Such Element Exception';
         }
 
