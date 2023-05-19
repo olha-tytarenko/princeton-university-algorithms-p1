@@ -62,12 +62,16 @@ class LinkedListDeque {
             throw 'No Such Element Exception'
         }
 
+        let value = this.start.value;
+
         this.start = this.start.next;
         this.size--;
 
         if (this.size === 0) {
             this.end = null;
         }
+
+        return value;
     }
 
     removeLast() {
@@ -76,6 +80,7 @@ class LinkedListDeque {
         }
 
         let current = this.start;
+        let value = this.end.value;
 
         if (this.size === 1) {
             this.start = null;
@@ -93,6 +98,8 @@ class LinkedListDeque {
         this.end.next = null;
 
         this.size--;
+
+        return value;
     }
 
     size() {
